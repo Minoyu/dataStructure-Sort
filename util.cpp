@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctime>
 
 //输出测试数据
 void printTestData()
@@ -30,6 +31,7 @@ void printMenu()
 //切换功能
 void switchFun()
 {
+	clock_t start, end;
 	for (;;)
 	{
 		printMenu();
@@ -37,6 +39,8 @@ void switchFun()
 		cout << "\n请输入功能序号:";
 		cin >> funId;
 		system("cls");
+
+		start = clock(); //程序开始计时
 		switch (funId)
 		{
 		case 1:
@@ -74,6 +78,14 @@ void switchFun()
 			switchFun();
 			break;
 		}
+
+		end = clock(); //程序开始计时
+		if (funId > 2)
+		{
+			double endtime = (double)(end - start) / CLOCKS_PER_SEC;
+			cout << "\n排序使用时间:" << endtime * 1000 << "ms" << endl; //s为单位
+		}
+
 		cout << "\n\n是否进入菜单？(y/n):";
 		char isContinue;
 		cin >> isContinue;
