@@ -19,10 +19,10 @@ void doAction(int tempData[], int low, int high)
         while (tempData[i] <= temp && i < j)
             i++;
         if (i < j)
-            doSwap(tempData[i], tempData[j]);
+            swap(tempData[i], tempData[j]);
     }
     //将基准temp放于自己的位置，（第i个位置）
-    doSwap(tempData[low], tempData[i]);
+    swap(tempData[low], tempData[i]);
     printCurrentResult(tempData, sortCount++);
     doAction(tempData, low, i - 1);
     doAction(tempData, i + 1, high);

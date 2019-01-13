@@ -108,11 +108,3 @@ void printCurrentResult(int data[], int n)
 	}
 	cout << endl;
 }
-
-//用于两者交换
-void doSwap(int a, int b)
-{
-	int temp = b;
-	b = a;
-	a = temp;
-}

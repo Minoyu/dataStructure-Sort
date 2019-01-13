@@ -26,7 +26,7 @@ void selectSort(int testData[])
         }
         if (minP > i && minTemp < selectNum)//如果其后的最小值小余选定的值则进行交换
         {
-            doSwap(tempData[i], tempData[minP]);
+            swap(tempData[i], tempData[minP]);
         }
         printCurrentResult(tempData, i + 1);
     }

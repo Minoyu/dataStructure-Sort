@@ -18,7 +18,7 @@ void bubbleSort(int testData[])
         {
             if (tempData[j] < tempData[j - 1])
             {
-                doSwap(tempData[j], tempData[j - 1]);
+                swap(tempData[j], tempData[j - 1]);
             }
         }
         printCurrentResult(tempData, testDataCount - i + 1);
