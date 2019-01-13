@@ -5,8 +5,8 @@ void merge(int *tempData, int low, int mid, int high)
 {
     int i = low, j, k, temp;
     for (j = mid + 1; i < j && j <= high;)
-    {                                   /*将数组后半段逐个插入前半段，必须要有i<j,
-     不然i的范围无法控制，导致数组中其他关键字受影响*/
+    {                                   
+        /*将数组后半段逐个插入前半段，必须要有i<j,不然i的范围无法控制，导致数组中其他关键字受影响*/
         if (tempData[i] <= tempData[j]) //找到tempData[j]要插入的位置
             ++i;
         else
@@ -38,6 +38,7 @@ void mergeSort(int testData[])
 {
     sortCount = 0;
     int tempData[testDataCount];
+    //转存到临时数组
     for (int i = 0; i < testDataCount; i++)
     {
         tempData[i] = testData[i];

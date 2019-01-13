@@ -31,6 +31,7 @@ void doAction(int tempData[], int low, int high)
 void quickSort(int testData[])
 {
     int tempData[testDataCount];
+    //转存到临时数组
     for (int i = 0; i < testDataCount; i++)
     {
         tempData[i] = testData[i];
