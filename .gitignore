@@ -1,0 +1,7 @@
+*.o
+.vscode
+cmake-build-debug
+*.dev
+*.exe
+*.win
+*.layout
