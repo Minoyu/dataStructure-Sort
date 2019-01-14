@@ -23,4 +23,6 @@ void inputTestData(); //输入测试数据
 void printMenu(); //输出菜单
 void switchFun();//切换功能 
 void printCurrentResult(int data[],int n); //输出当前次的结果
+void moveBack(int data[], int m, int n);//数组从m到n向后平移一格
+
 

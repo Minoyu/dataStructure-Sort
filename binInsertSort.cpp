@@ -1,12 +1,4 @@
 #include "main.h"
-//从第m个元素开始到n个元素结束整体向后移动1格
-void moveBack(int data[], int m, int n)
-{
-    for (int i = n; i > m; i--)
-    {
-        data[i] = data[i - 1];
-    }
-}
 
 //折半插入排序的具体实现
 void binInsertSort(int testData[])

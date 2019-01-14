@@ -36,6 +36,7 @@ void heapSort(int testData[])
 
     for (int i = n / 2 - 1; i >= 0; i--)
         MaxHeapFixDown(tempData, i, n);
+        printCurrentResult(tempData, sortCount++);
     for (int i = n - 1; i >= 1; i--)
     {
         swap(tempData[i], tempData[0]);
